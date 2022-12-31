@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+p{
+    color: rgb(0, 0, 0);
+    font-family:cursive;
+}
+
+h2{
+    color: white;
+    font-family: fantasy;
+    letter-spacing: 0.3rem;
+}
+
+.card{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+    background-color: rgb(206, 204, 201);
+    transition: 0.5s;
+    padding: 30px 50px;
+    cursor: pointer;
+
+}
+
+.head{
+    background-color: dodgerblue;
+    border-radius: 0.5rem;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 10rem;
+    /* transform: translateX(-2rem); */
+    /* transform: translateY(-3rem); */
+    transform: translate(-4rem,-3rem);
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+h1{
+    color: rgb(223, 196, 21);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+.imgbox{
+    position: relative;
+    width: 150px;
+    height: 150px;   
+    display: flex;
+    justify-content: center;
+    transform: translateY(1rem);
+    z-index: 1;
+
+}
+
+.main-content{
+    padding: 0.5rem 0.9rem;
+    text-align: center;
+    transform: translateY(-25rem);
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.card:hover{
+    height: 19rem;
+}
+.card:hover > .main-content{
+    opacity: 1;
+    transform: translateY(0rem);
+}
+
+
+img{
+    width: 80%;
+    height: 80%;
+    /* margin-left: 3rem; */
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+    border-radius: 5rem;
+    background-color:rgb(35, 35, 122) ; 
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(-25rem);
+    /* height: 100vh; */
+}
+
+#instagram{
+    width: 2.5rem;
+}
+#linkedin{
+    width: 2.5rem;
+}
+#link{
+    width: 2.5rem;
+}
+.logo{
+    border-radius: 3rem;
+}
+
+.card:hover > .links{
+    opacity: 1;
+    transform: translateY(0rem)
+
+}
