@@ -8,5 +8,6 @@ function remove_hover(){
 card.addEventListener('mouseenter',()=>{
     card.classList.add('card');
 })
-
-
+card.addEventListener('mouseleave',()=>{
+    card.classList.remove('card');
+})
